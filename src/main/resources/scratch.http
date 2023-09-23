@@ -1,0 +1,64 @@
+### GET article from list
+
+GET http://localhost:8080/api/v1/articles
+
+### GET article from list using slug
+
+GET http://localhost:8080/api/v1/articles/my-title
+
+### Post new article to list
+
+POST http://localhost:8080/api/v1/articles
+Content-Type: application/json
+
+{
+  "title": "My new article from post api 2",
+  "content" : "The content gets even better"
+}
+
+### Put new article to list
+
+PUT http://localhost:8080/api/v1/articles/my-new-article-from-post-api-2
+Content-Type: application/json
+
+{
+  "title": "My new article from post api 2",
+  "content" : "The content gets even better for new article"
+}
+
+### Delete new article to list
+
+DELETE http://localhost:8080/api/v1/articles/my-new-article-from-post-api-2
+
+### GET article from list of V2 version
+
+GET http://localhost:8080/api/v2/articles
+
+### GET article from list using slug of V2 version
+
+GET http://localhost:8080/api/v2/articles/my-new-article-from-post-version-2-2
+
+### Post new article to list of V2 version
+
+POST http://localhost:8080/api/v2/articles
+Content-Type: application/json
+
+{
+  "title": "My new article from post version 2 -3",
+  "content" : "The content gets even better for version 2"
+}
+
+### Put new article to list of V2 version
+
+PUT http://localhost:8080/api/v2/articles/my-new-article-from-post-version-2-2
+Content-Type: application/json
+
+{
+  "title": "My new article from post api 2",
+  "content" : "The content gets even better for new article of version 2"
+}
+
+### Delete new article to list of V2 version
+
+DELETE http://localhost:8080/api/v2/articles/my-new-article-from-post-version-2-1
+
